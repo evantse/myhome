@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aliabab.aliweibo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="10" />
+    
+    
+ 	<!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 访问网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--  相机权限 -->
+    <uses-permission  android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- SDCard读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <application
+        android:icon="@drawable/icon2"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        >
+        <activity
+            android:name="com.aliabab.aliweibo.LoadActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  android:name="com.aliabab.aliweibo.LoginActivity"></activity>.
+         <activity android:name="com.aliabab.aliweibo.HomeActivity"/>
+    </application>
+    
+    
+
+</manifest>
