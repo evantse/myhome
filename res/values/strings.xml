@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
-    <string name="app_name">阿里巴巴商友动态</string>
+    <string name="app_name">商友动态</string>
     <string name="load_top">欢迎使用商友动态</string>
     <string name="dialogTitle">当前网络状态</string>
     <string name="networkfaile">没有可用网络，请检查您的网络设置是否开启</string>

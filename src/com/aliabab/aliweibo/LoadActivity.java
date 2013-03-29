@@ -26,7 +26,7 @@ public class LoadActivity extends Activity {
 		imageView.setAnimation(animation);
 		animation.setAnimationListener(new AnimationListener() {
 			/**
-			 * 动画开始时触发
+			 * 动画弄1�7始时触发
 			 */
 			@Override
 			public void onAnimationStart(Animation animation) {
@@ -38,7 +38,7 @@ public class LoadActivity extends Activity {
 			}
 
 			/**
-			 * 动画结束的时候执行
+			 * 动画结束的时候执衄1�7
 			 */
 			@Override
 			public void onAnimationEnd(Animation animation) {
@@ -57,7 +57,7 @@ public class LoadActivity extends Activity {
 	}
 	
     /**
-     * 初始化
+     * 初始匄1�7
      */
     public void init() {
         
@@ -65,7 +65,7 @@ public class LoadActivity extends Activity {
         UserDAO services = new UserDAO(this);
         
         List<UserDO> users = services.findAllUsers();
-     // 如果用户数据不存在,表示 从来没用过。跳到授 权。要么就到登录页面
+     // 如果用户数据不存圄1�7,表示 从来没用过�1�7�跳到授 权�1�7�要么就到登录页靄1�7
         if (users == null || users.isEmpty()) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);

@@ -12,7 +12,7 @@ import com.aliabab.aliweibo.util.HttpHelper;
 import com.aliabab.aliweibo.util.JsonObjectParser;
 
 public class UserService {
-	private static  final String QUERY_USER_URL = "http://10.16.212.120/andriod/userdata.json";
+	private static  final String QUERY_USER_URL = "http://10.16.212.127/andriod/userdata.json";
 	
 
 	
