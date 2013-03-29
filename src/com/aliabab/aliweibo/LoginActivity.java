@@ -2,6 +2,7 @@ package com.aliabab.aliweibo;
 
 
 
+import com.aliabab.aliweibo.LoadActivity.UserSession;
 import com.aliabab.aliweibo.db.UserDAO;
 import com.aliabab.aliweibo.pojo.UserDO;
 import com.aliabab.aliweibo.service.UserService;
@@ -60,6 +61,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 						getResources().getDrawable(R.drawable.not));
 				
 			}else{
+				UserSession.nowUser = userDO;
 				userDAO.insertUserDO(userDO);
 				Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
 	            startActivity(intent);

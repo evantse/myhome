@@ -71,6 +71,7 @@ public class LoadActivity extends Activity {
             startActivity(intent);
             finish();
         } else{
+        	UserSession.nowUser = users.get(0);
         	Intent intent = new Intent(this,HomeActivity.class);
             startActivity(intent);
             finish();

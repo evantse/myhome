@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="15dip">
+
+  <LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  
+  	<ImageView 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:src="@drawable/smiley_happy"/>
+  		
+  	<TextView 		
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:text="@string/authTip"
+  		android:layout_marginLeft="5dip"
+  		android:textSize="20dip"
+  		android:textColor="@color/black"/>
+  
+  </LinearLayout>
+  
+  <TextView 		
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:text="@string/authTipMsg"
+  		android:textColor="#ff6633"
+  		android:layout_marginLeft="5dip"
+  		android:layout_marginRight="5dip"
+  		android:textSize="18dip"
+  		android:layout_marginTop="10dip"/>
+  
+  <RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_alignParentBottom="true">
+
+  
+     <Button android:id="@+id/btn_auth_begin"
+  		  android:layout_width="wrap_content"
+  		  android:layout_height="wrap_content"
+  		  android:background="@drawable/login_btn_selector"
+  		  android:layout_marginTop="10dip"
+  		  android:textColor="@color/white"
+  		  android:text="@string/auth"
+  		  android:textSize="40dip"
+  		  android:layout_gravity="center"/>
+  
+  </RelativeLayout>
+  
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/userinfo_title_bg">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:gravity="center" android:background="@drawable/bg_btn_nor">
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:background="@drawable/btn_title_return_style" android:id="@+id/status_return_weibo"
+			android:gravity="center" />
+		<LinearLayout android:layout_width="200dip"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center">
+			<TextView android:layout_width="wrap_content" android:id="@+id/txt_userName"
+				android:layout_height="wrap_content" android:background="@android:color/transparent"
+				android:textColor="@color/black" android:textStyle="bold"
+				android:textSize="20dip" android:text="个人资料" />
+		</LinearLayout>
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:background="@drawable/status_refresh_style" android:id="@+id/status_refresh_weibo"
+			android:gravity="center" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="10dip" android:layout_height="wrap_content"
+		android:layout_marginBottom="5dip" android:orientation="horizontal"
+		android:background="@drawable/title_button_group_middle_normal"
+		android:gravity="center">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:id="@+id/userinfo_image" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:width="220dip"
+			android:textColor="@color/black" android:textSize="20dip"
+			android:gravity="center" android:id="@+id/userinfo_username"
+			android:layout_marginLeft="10dip" />
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+			android:id="@+id/userinfo_icon" android:layout_marginRight="10dip" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="10dip" android:layout_height="wrap_content"
+		android:layout_marginBottom="5dip" android:orientation="vertical"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+		<TextView android:layout_width="fill_parent" android:text=" 地址："
+			android:id="@+id/userinfo_address" android:textColor="@color/black"
+			android:gravity="center_vertical" android:layout_marginLeft="10dip" android:layout_height="wrap_content"
+			android:background="@drawable/layout_looking_style" />
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:src="@drawable/list_top_line" />
+		<TextView android:layout_width="fill_parent" android:text=" 登录名："
+			android:id="@+id/userinfo_loginName"  android:layout_marginLeft="10dip"  android:textColor="@color/black"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:background="@drawable/layout_popular_forward_style" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="10dip" android:layout_height="wrap_content"
+		android:layout_marginBottom="5dip" android:orientation="vertical"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="wrap_content" android:text=" 关注数："
+				android:gravity="center" android:id="@+id/userinfo_friendsCount"
+				 android:textColor="@color/black" android:layout_height="wrap_content"
+				android:background="@drawable/userinfo_above_left" />
+			<TextView android:layout_width="wrap_content" android:text=" 微博数："
+				android:id="@+id/userinfo_statusesCount"  android:textColor="@color/black"
+				android:gravity="center" android:layout_height="wrap_content"
+				android:background="@drawable/userinfo_above_right"
+				android:layout_toRightOf="@+id/userinfo_loginName" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="wrap_content" android:text=" 粉丝数："
+				android:id="@+id/userinfo_followingCount"  android:textColor="@color/black"
+				android:gravity="center" android:layout_height="wrap_content"
+				android:background="@drawable/userinfo_below_left" />
+			<TextView android:layout_width="wrap_content" android:text=" 话题数："
+				android:id="@+id/userinfo_trendsCount"  android:textColor="@color/black"
+				android:gravity="center" android:layout_height="wrap_content"
+				android:background="@drawable/userinfo_below_right" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- <LinearLayout android:layout_width="fill_parent" android:id="@+id/userinfo_mine"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:gravity="center" android:layout_marginTop="10dip">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center_vertical" android:background="@drawable/layout_looking_style"
+			android:id="@+id/layout_favorites">
+			<TextView android:layout_width="wrap_content"
+				android:layout_marginLeft="10dip" android:layout_height="wrap_content"
+				android:text="收藏" android:gravity="center_vertical"
+				 android:textColor="@color/black" />
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/triangle"
+				android:layout_marginLeft="205dip" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center_vertical" android:background="@android:color/white">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/list_top_line" />
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center_vertical" android:background="@drawable/layout_popular_forward_style"
+			android:id="@+id/layout_blocks">
+			<TextView android:layout_width="wrap_content"
+				android:layout_marginLeft="10dip" android:layout_height="wrap_content"
+				android:text="黑名单" android:gravity="center_vertical"
+				 android:textColor="@color/black" />
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/triangle"
+				android:layout_marginLeft="190dip" />
+		</LinearLayout>
+	</LinearLayout> 
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:id="@+id/do_userinfo"
+	>
+		<Button 
+			android:layout_width="120dip"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_user_do"
+			android:id="@+id/do_block"
+			android:layout_marginLeft="15dip"
+		/>
+		<Button 
+			android:layout_width="120dip"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_user_do"
+			android:id="@+id/do_friendship"
+			android:layout_marginLeft="50dip"
+		/>
+	</LinearLayout>
+	-->
+</LinearLayout>

@@ -16,7 +16,7 @@ public class HttpHelper {
 		try {
 			url = new URL(urlStr);
 			connection = (HttpURLConnection) url.openConnection();
-			in = new InputStreamReader(connection.getInputStream());
+			in = new InputStreamReader(connection.getInputStream(),"GBK");
 			BufferedReader bufferedReader = new BufferedReader(in);
 			StringBuffer strBuffer = new StringBuffer();
 			String line = null;

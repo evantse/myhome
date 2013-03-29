@@ -12,10 +12,10 @@
 <!-- 加载进度条 -->
 <include android:id="@+id/load_progress" layout="@layout/progress"/>
 
-<ListView android:id="@+id/home_lv" android:layout_width="wrap_content"
+<ListView android:id="@+id/home_lv" android:layout_width="match_parent"
 			android:layout_height="wrap_content" android:divider="@drawable/link"
-			android:dividerHeight="2px" android:layout_margin="0px"
-			android:background="#BBFFFFFF" android:cacheColorHint="#00000000"
+			android:dividerHeight="2dp" android:layout_margin="0dp"
+			android:background="@color/white" android:cacheColorHint="#00000000"
 			android:fastScrollEnabled="true"
 			android:focusable="true"/>
 
