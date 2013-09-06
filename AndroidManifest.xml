@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="5"
-        android:targetSdkVersion="10" />
+        android:targetSdkVersion="12" />
     
     
  	<!-- 访问网络的权限 -->
